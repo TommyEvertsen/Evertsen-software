@@ -1,0 +1,16 @@
+.introImage {
+  filter: grayscale(0);
+  transition: filter 0.5s ease;
+  transition: transform 0.5s ease;
+}
+
+.introImage:hover {
+  filter: grayscale(1);
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 768) {
+  .introImage {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  }
+}

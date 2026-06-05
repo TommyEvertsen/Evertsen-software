@@ -50,7 +50,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          {children}
+          <div className="mt-8 ">{children}</div>
         </ThemeProvider>
       </body>
     </html>
